@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
+    <script src="calendar.js" type="text/javascript"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css"
+    />
+    <link rel="stylesheet" href="calendar.css" />
+  </head>
+  <body>
+    <input id="inputDate" type="text" />
+
+    <table id="schedule"></table>
+
+    <script>
+      var picker = new Pikaday({
+        field: document.getElementById("inputDate"),
+        format: "YYYY-MM-DD",
+        onSelect: function () {
+          var date = picker.toString();
+          generateTable(date);
+        },
+      });
+    </script>
+  </body>
+</html>
