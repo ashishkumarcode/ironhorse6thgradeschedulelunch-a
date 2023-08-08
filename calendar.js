@@ -697,7 +697,9 @@ function getDay(date) {
 //function to return the schedule for the day given the date
 function getSchedule(date) {
   let day = getDay(date);
-  let specialDay = checkSpecialDay(new Date(date).toISOString().substr(0, 10));
+  let specialDay = checkSpecialDay(
+    new Date(date).toISOString().substring(0, 10)
+  );
   if (specialDay) {
     return scheduleForDay[specialDay];
   }
