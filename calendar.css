@@ -4,6 +4,12 @@ body {
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
+  padding: 20px;
+}
+
+img {
+  height: 40px;
+  position: absolute;
 }
 
 #inputDate {
@@ -13,17 +19,25 @@ body {
   max-width: 360px;
   padding: 12px 20px;
   text-align: center;
+  border-radius: 4px;
+  border: 2px solid #00738a;
+  color: #00738a;
 }
 
 table {
+  margin-top: 14px;
   border-collapse: collapse;
   width: 100%;
   font-size: 14px;
+  table-layout: fixed;
 }
 th,
 td {
   text-align: left;
   padding: 8px;
+}
+th {
+  font-size: 12px;
 }
 tr.break,
 tr.lunch {
