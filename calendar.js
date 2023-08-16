@@ -108,7 +108,7 @@ const MTFSchedule = [
     startTime: "10:14",
     endTime: "10:59",
     name: "3",
-    room: "IMR",
+    room: "203",
     teacher: "Olds, Ronald",
   },
   {
@@ -503,7 +503,7 @@ const scheduleForDay = {
       startTime: "10:00",
       endTime: "10:40",
       name: "3",
-      room: "IMR",
+      room: "203",
       teacher: "Olds, Ronald",
     },
     {
@@ -575,7 +575,7 @@ const scheduleForDay = {
       startTime: "9:59",
       endTime: "10:42",
       name: "3",
-      room: "IMR",
+      room: "203",
       teacher: "Olds, Ronald",
     },
     {
@@ -654,7 +654,7 @@ const scheduleForDay = {
       startTime: "10:54",
       endTime: "11:31",
       name: "3",
-      room: "IMR",
+      room: "203",
       teacher: "Olds, Ronald",
     },
     {
